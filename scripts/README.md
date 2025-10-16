@@ -1,4 +1,8 @@
-# GitHub Command Line Interfaces for FutureAIRobotics
+# GitHub-CLI
+
+> GitHub Command Line Interfaces for FutureAIRobotics.
+
+---
 
 ## 1. Prerequisite
 
@@ -7,39 +11,169 @@
 >> sudo apt update && sudo apt install gh (Ubuntu)<br>
 >> choco install gh (Windows)<br>
 
+---
+
 ## 2. Custom Scripts
 
-### (1) sync-forks
+### (1) clone-repo
 
-> Goal: Sync all forked repositories automatically with given owner(user or organization).
+> Goal: Clone repository automatically with given local path, owner(user or organization), name and branch.
+> 
+> Run: sh ./scripts/clone-repo.sh
+
+### (2) clone-repos
+
+> Goal: Clone repositories automatically on default branch with given local path, owner(user or organization) and names.
+> 
+> Run: sh ./scripts/clone-repos.sh
+
+### (3) clone-all-repos
+
+> Goal: Clone all repositories automatically on default branch with given local path and owner(user or organization).
+> 
+> Run: sh ./scripts/clone-all-repos.sh
+
+### (4) push-commit
+
+> Goal: Push commit for existing repository automatically with given local path, owner(user or organization), name and branch.
+> 
+> Run: sh ./scripts/push-commit.sh
+
+### (5) push-commits
+
+> Goal: Push commits for all existing repositories automatically with given local path and owner(user or organization).
+> 
+> Run: sh ./scripts/push-commits.sh
+
+### (6) push-all-commits
+
+> Goal: Push commits for all existing repositories automatically with given local repository archive path.
+> 
+> Run: sh ./scripts/push-all-commits.sh
+
+### (7) sync-fork
+
+> Goal: Sync fork for forked repository automatically with given owner(user or organization), name and branch.
+> 
+> Run: sh ./scripts/sync-fork.sh
+
+### (8) sync-forks
+
+> Goal: Sync forks for all forked repositories automatically with given owner(user or organization).
 > 
 > Run: sh ./scripts/sync-forks.sh
 
-### (2) pull-updates
+### (9) sync-all-forks
 
-> Goal: Pull updates for all existing repositories automatically with given local owner path and owner(user or organization).
+> Goal: Sync forks for all forked repositories automatically with given owners(user or organization).
+> 
+> Run: sh ./scripts/sync-all-forks.sh
+
+### (10) pull-update
+
+> Goal: Pull update for existing repository automatically with given local path, owner(user or organization), name and branch.
+> 
+> Run: sh ./scripts/pull-update.sh
+
+### (11) pull-updates
+
+> Goal: Pull updates for all existing repositories automatically with given local path and owner(user or organization).
 > 
 > Run: sh ./scripts/pull-updates.sh
 
-### (3) gen-forks-list
+### (12) pull-all-updates
 
-> Goal: Generation for GitHub Repository Forks List with given owner(user or organization).
->
+> Goal: Pull updates for all existing repositories automatically with given local repository archive path.
+> 
+> Run: sh ./scripts/pull-all-updates.sh
+
+### (13) gen-followers-list
+
+> Goal: Generation for github followers list with given owner(user or organization).
+> 
+> Run: sh ./scripts/gen-followers-list.sh
+
+### (14) gen-followings-list
+
+> Goal: Generation for github followings list with given owner(user or organization).
+> 
+> Run: sh ./scripts/gen-followings-list.sh
+
+### (15) gen-forkcounts-list
+
+> Goal: Generation for github forkcounts list with given owner(user or organization).
+> 
+> Run: sh ./scripts/gen-forkcounts-list.sh
+
+### (16) gen-forks-list
+
+> Goal: Generation for github forks list with given owner(user or organization).
+> 
 > Run: sh ./scripts/gen-forks-list.sh
+
+### (17) gen-stargazers-list
+
+> Goal: Generation for github stargazers list with given owner(user or organization).
+> 
+> Run: sh ./scripts/gen-stargazers-list.sh
+
+### (18) gen-stars-list
+
+> Goal: Generation for github stars list with given owner(user or organization).
+> 
+> Run: sh ./scripts/gen-stars-list.sh
+
+---
 
 ## 3. Custom Actions
 
-### (1) sync-forks-futureairobotics
+### (1) gen-followers-list-futureairobotics
 
-> Goal: Synchronization of GitHub Repository Forks for FutureAIRobotics.
+> Goal: Generation of GitHub Followers List for FutureAIRobotics.
 >
-> Result: All GitHub Repository Forks sync with the upstreams for FutureAIRobotics(https://github.com/FutureAIRobotics).
+> Result: assets/docs/Followers-List-FutureAIRobotics.md
 
-### (2) gen-forks-list-futureairobotics
+### (2) gen-followings-list-futureairobotics
 
-> Goal: Generation of GitHub Repository Forks List for FutureAIRobotics.
-> 
+> Goal: Generation of GitHub Followings List for FutureAIRobotics.
+>
+> Result: assets/docs/Followings-List-FutureAIRobotics.md
+
+### (3) gen-forkcounts-list-futureairobotics
+
+> Goal: Generation of GitHub Forkcounts List for FutureAIRobotics.
+>
+> Result: assets/docs/Forkcounts-List-FutureAIRobotics.md
+
+### (4) gen-forks-list-futureairobotics
+
+> Goal: Generation of GitHub Forks List for FutureAIRobotics.
+>
 > Result: assets/docs/Forks-List-FutureAIRobotics.md
+
+### (5) gen-stargazers-list-futureairobotics
+
+> Goal: Generation of GitHub Stargazers List for FutureAIRobotics.
+>
+> Result: assets/docs/Stargazers-List-FutureAIRobotics.md
+
+### (6) gen-stars-list-futureairobotics
+
+> Goal: Generation of GitHub Stars List for FutureAIRobotics.
+>
+> Result: assets/docs/Stars-List-FutureAIRobotics.md
+
+### (7) generate-github-contribution-snake
+
+> Goal: Generation of GitHub Contribution Snake for FutureAIRobotics.
+>
+> Result: assets/images/github-contribution-snake.gif & assets/images/github-contribution-snake.svg
+
+### (8) sync-forks-futureairobotics
+
+> Goal: Synchronization of GitHub Forks for FutureAIRobotics.
+>
+> Result: synced all forked github repositories
 
 ---
 
