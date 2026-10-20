@@ -1,4 +1,4 @@
-name: Gen Forks List - FutureAIRobotics
+name: Gen Forks List
 
 run-name: Gen Forks List - FutureAIRobotics
 
@@ -24,12 +24,12 @@ concurrency:
 
 jobs:
   gen-forks-list:
-    name: Gen Forks List
+    name: Gen Forks List for FutureAIRobotics
     runs-on: [self-hosted, Linux, ARM64, FutureAIRobotics, runner-1]
     
     steps:
       - name: Check out the repository to the runner
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       
       - name: Configure git
         run: |
